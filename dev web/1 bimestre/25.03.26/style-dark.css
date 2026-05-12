@@ -1,0 +1,112 @@
+/* ESTILO ESCURO — requisitos
+
+   Fonte do body: monoespaçada (ex: Courier New)
+   Fundo da página: preto      #0d0d0d
+   Cor do texto: cinza claro   #e0e0e0
+
+   Header: mesmo fundo da página, texto verde neon #00ff99
+   Alinhado à esquerda, borda inferior verde
+   H1 com muito espaçamento entre letras
+
+   Nav: fundo levemente diferente do body (#111)
+   Links verdes, ficam brancos ao passar o mouse
+
+   Main centralizado, largura máxima 800px
+
+   Article: fundo #111, borda superior verde fina
+   Título do article em verde neon
+
+   Footer: borda superior sutil, texto bem apagado, centralizado
+*/
+/* ESTILO CLARO — requisitos
+
+   Fonte do body: serifada (ex: Georgia)
+   Fundo da página: bege claro  #f5f0e8
+   Cor do texto: quase preto    #2c2c2c
+
+   Header: fundo escuro #1a1a2e, texto claro, centralizado
+   H1 grande, em maiúsculas, com espaçamento entre letras
+   Subtítulo em itálico, cor acinzentada
+
+   Nav: fundo vermelho #e63946, links brancos, sem sublinhado
+   Links em maiúsculas, sublinhado ao passar o mouse
+
+   Main centralizado, largura máxima 800px, margem automática
+
+   Article: fundo branco, borda esquerda vermelha grossa
+   Título do article em azul escuro
+
+   Footer: mesmo fundo do header, texto acinzentado, centralizado
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', monospace;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+}
+header{
+    background-color: #0d0d0d;
+    color: #00ff99;
+    text-align: left;
+    padding: 40px 20px;
+    border-bottom: 2px solid #00ff99;
+}
+header h1{
+    font-size: 2.5em;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+header p{
+    font-size: 0.85em;
+    margin-top: 6px;
+    color: #555555;
+}
+nav {
+    background-color: #111111;
+    padding: 14px 40px;
+    border-bottom: 1px solid #222222;
+}
+nav a{
+    color: #00ff99;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 0.85em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+main{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+article{
+    background-color: #ffffff;
+    border-left: 5px solid #e63946;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+}
+article h2 {
+    font-size: 1.4em;
+    margin-bottom: 12px;
+    color: #1a1a2e;
+
+}
+article p {
+    line-height: 1.8em;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: #1a1a2e;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85em;
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 1px black solid;
+        }
+        .especial > strong {
+            margin-top: 1800px;
+            margin-bottom: 5400px;
+            margin-left: 150px;
+            margin-right: 280px;
+        }
+        .normal > strong {
+            color: red;
+            background-color: black;
+            border-radius: 15%;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        div{
+            border: 1px solid black;
+            width: 170px;
+            height: 40px;
+        }
+        div.dois{
+            position: relative;
+            left: 60px;
+            top: 40px;
+        }
+        span{
+            position: relative;
+            left: 60px;
+            top: 40px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+        <p>Este é o primeiro paragrafo</p>
+        <p class="especial">Este paragrafo contem <strong>três</strong> elementos inline</p>
+        <p>Este é o terceiro paragrafo</p>
+        <p class="normal">Este paragrafo contem <strong>três</strong> elementos inline</p>
+
+        <div class="1">este é o elemento div 1</div>
+        <div class="dois">este é o elemento div 2</div>
+        <div class="3">este é o elemento div 3</div>
+
+        <h2>Neste cabeçalho <span>estas palavras</span> foram deslocadas da posição padrão</h2>
+</body>
+</html>

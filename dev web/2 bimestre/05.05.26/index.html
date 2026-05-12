@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula de position float</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            width: 300px;
+            height: 280px;
+        }
+
+        div {
+            border: 2px dotted black;
+        }
+
+        .container>div:nth-child(2n) {
+            background: #ccc;
+        }
+
+        .um {
+            width: 100px;
+            height: 50px;
+        }
+
+        .dois {
+            width: 65px;
+            height: 40px;
+        }
+
+        .tres {
+            width: 50px;
+            height: 45px;
+        }
+
+        .quatro {
+            width: 115px;
+            height: 60px;
+        }
+
+        .cinco {
+            width: 45px;
+            height: 20px;
+        }
+
+        .seis {
+            width: 50px;
+            height: 30px;
+        }
+
+        .container>div {
+            float: left;
+        }
+
+        ul {
+            border: 1px solid black;
+            width: 40%;
+            height: 280px;
+        }
+
+        li {
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="home.html">home</a></li>
+        <li><a href="quemsomos.html">quem somos</a></li>
+        <li><a href="portifolio.html">portifolio</a></li>
+        <li><a href="contato.html">contato</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="um">div 1</div>
+        <div class="dois">div 2</div>
+        <div class="tres">div 3</div>
+        <div class="quatro">div 4</div>
+        <div class="cinco">div 5</div>
+        <div class="seis">div 6</div>
+    </div>
+
+</body>
+
+</html>

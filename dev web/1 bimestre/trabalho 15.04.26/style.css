@@ -1,0 +1,41 @@
+body{
+    max-width: 1600px;
+    margin:40px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+header{
+    background-color: #e28017;
+    border-radius: 10px;
+    width: 1400px;
+    margin: 15px;
+}
+nav{
+    background-color: #979797;
+    border-radius: 10px;
+    margin: 15px;
+}
+aside{
+    background-color: #e28017;
+    border-radius: 10px;
+    width: 160px;
+    margin: 15px;
+}
+main{
+    background-color: #e28017;
+    border-radius: 10px;
+    width: 1140px;
+    margin: 15px;
+}
+article{
+    background-color: #979797;
+    border-radius: 10px;
+    margin: 15px;
+}
+footer{
+    background-color: #e28017;
+    border-radius: 10px;
+    width: 1600px;
+    margin: 15px;
+}
