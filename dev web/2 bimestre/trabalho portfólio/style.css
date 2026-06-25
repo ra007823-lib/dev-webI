@@ -1,0 +1,26 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+h5{
+    font-size: 25px;
+}
+ul{
+    font-size: 25px;
+    font-style:italic;
+
+}
+li{
+    list-style: none;
+}
+a{
+    font-style: italic;
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+a:hover{
+    color: red;
+}
+p{
+    font-size: 20px;
+}
