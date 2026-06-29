@@ -1,15 +1,27 @@
 body{
-    font-family: 'Times New Roman', Times, serif;
-    width: 100vh;
-    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-image: url(img/background.png);
 }
-footer{
-    width: 100%;
+footer{  
+    position: fixed;
     text-align: center;
-    border: 1px black solid;
+    width: 50vw;
+    top: 90vh;
+    left: 50vh;
+    box-shadow: 0 0 2px white, 0 0 5px white; 
+    background-color: black;
+}
+header{
+    text-align: center;
+    font-size: 25px;
 }
 h5{
-    font-size: 25px;
+    font-size: 20px;
 }
 ul{
     font-size: 25px;
@@ -21,11 +33,14 @@ li{
 a{
     font-style: italic;
     text-decoration: none;
-    color: blue;
+    color: #00E5FF;
     font-size: 20px;
 }
 a:hover{
-    color: red;
+    color: #E040FB;
+}
+a:{
+    color: blue;
 }
 p{
     font-size: 20px;
@@ -34,25 +49,27 @@ button.troca_direita{
     position: absolute;
     height: 7vh;
     width: 7vh;
-    left: 100vh;
+    left: 95%;
     top:  5vh;
-    background: ;
-    border: ;
+    background: none;
+    border: none;
 }
 button.troca_esquerda{
     position: absolute;
     height: 7vh;
     width: 7vh;
-    left: -5vh;
-    top: -25px;
-    background: ;
-    border: ;
+    left: 0vh;
+    top: 5%;
+    background: none;
+    border: none;
 }
 img{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 article{
     position: relative;
-    left: 25%;
+    width: 75vw;
+    left: 10%;
+    color: #E5E7EB;
 }
