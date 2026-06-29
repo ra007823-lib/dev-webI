@@ -73,3 +73,22 @@ article{
     left: 10%;
     color: #E5E7EB;
 }
+input{
+    width: 45vh;
+}
+label:has(.menssagem){
+    width: 70vh;
+    height: 100px;
+}
+body{
+    opacity:0;
+    animation: aparecer 1s forwards;
+}
+
+@keyframes aparecer{
+
+    to{
+        opacity:1;
+    }
+
+}
