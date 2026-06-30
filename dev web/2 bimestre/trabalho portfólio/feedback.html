@@ -11,7 +11,7 @@
 <body>
 
     <main>
-
+        <div class="alteracao" id="alteracao">
         <button onclick="window" class="troca_esquerda">
             <a href="hab_proj.html">
                 <img class="botao" src="img/esquerda.png" alt=" pagina anterior">
@@ -20,20 +20,29 @@
         <br>
         <br>
         <article>
-            <h5>Deixe seu feedback!</h5>
-            <form action="">
-                <p><label>Nome: <input type="text" name="nome" required class="nome"></label></p>
+            <h1>Deixe seu feedback!</h1>
+            <form onsubmit="mensagem(event)">
+                <p><label>Nome: <input type="text" name="nome" required class="nome" id="nome"></label></p>
                 <p><label>Email: <input type="text" name="email" required class="email"></label></p>
-                <p><label>Feedback: <input type="text" name="feedback" required class="menssagem"></label></p>
-                <button>Enviar</button>
+                <p><label>Feedback: <textarea name="feedback" required></textarea></label></p>
+                <button class="enviar" onclick="mensagem(event)">Enviar</button>
+
             </form>
 
         </article>
+        </div>
     </main>
 
     <footer>
         <p>Criado e desenvolvido Por: Nathan</p>
     </footer>
+    
+    <div class="agradecimentos" id="popup">
+        <br>
+        <button class="fechar" onclick='fechar()'>X</button>
+        <p id="nome_ag"></p>
+
+    </div>
     <script src="script.js"></script>
 </body>
 

@@ -1,60 +1,79 @@
-body{
+body {
     font-family: 'Segoe UI', sans-serif;
-    width: 100vw;
-    min-height: 100vh;
+    width: 99vw;
+    min-height: 96vh;
     padding: 0;
     margin: 0;
     color: white;
     background-image: url(img/background.png);
 }
-footer{  
+
+footer {
     position: fixed;
     text-align: center;
     width: 50vw;
     top: 90vh;
     left: 50vh;
-    box-shadow: 0 0 2px white, 0 0 5px white; 
+    box-shadow: 0 0 2px white, 0 0 5px white;
     background-color: black;
+    opacity: 1;
 }
+
 header{
+    position: relative;
     text-align: center;
     font-size: 25px;
+    width: 50vw;
+    left: 50vh;
+    padding: 0 0 10px;
 }
-h5{
+img.foto{
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    left:10%;
+    top: 3%;
+}
+
+h5 {
     font-size: 20px;
 }
-ul{
+
+ul {
     font-size: 25px;
-    font-style:italic;
+    font-style: italic;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     font-style: italic;
     text-decoration: none;
     color: #00E5FF;
     font-size: 20px;
 }
-a:hover{
+
+a:hover {
     color: #E040FB;
 }
-a:{
-    color: blue;
-}
-p{
+
+p {
     font-size: 20px;
 }
-button.troca_direita{
+
+button.troca_direita {
     position: absolute;
     height: 7vh;
     width: 7vh;
     left: 95%;
-    top:  5vh;
+    top: 5vh;
     background: none;
     border: none;
 }
-button.troca_esquerda{
+
+button.troca_esquerda {
     position: absolute;
     height: 7vh;
     width: 7vh;
@@ -63,32 +82,100 @@ button.troca_esquerda{
     background: none;
     border: none;
 }
-img{
+
+img {
     height: 50px;
     width: 50px;
 }
-article{
+
+article {
     position: relative;
     width: 75vw;
     left: 10%;
     color: #E5E7EB;
 }
-input{
+
+article.apresentacao{
+   position: relative;
+    width: 65vw;
+    left: 17%;
+    color: #E5E7EB; 
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
     width: 45vh;
+    background-color: #050816;
+    border-color: #00E5FF;
+    color: #E5E7EB;
 }
-label:has(.menssagem){
+
+textarea{
     width: 70vh;
-    height: 100px;
+    height: 40vh;
+    background-color: #050816;
+    border-color: #00E5FF;
+    color: #E5E7EB;
 }
-body{
-    opacity:0;
-    animation: aparecer 1s forwards;
+textarea:focus{
+    outline: none;
 }
 
-@keyframes aparecer{
+button.enviar {
+    background: rgba(10, 20, 45, .8);
+    border: 2px solid #00E5FF;
+    color: #FFFFFF;
+    width: 15%;
+    height: 2vw;
+    font-size: large;
+}
 
-    to{
-        opacity:1;
+button.enviar:hover {
+    background: #00E5FF;
+    color: #050816;
+    box-shadow:0 0 7px #00E5FF, 0 0 15px #00E5FF, 0 0 20px #00E5FF;
+}
+
+body {
+    opacity: 0.2;
+    animation: aparecer 400ms ease-out forwards;
+}
+
+@keyframes aparecer {
+
+    to {
+        opacity: 1;
     }
 
+}
+
+div.agradecimentos{
+    display: none;
+    text-align: center;
+    position: absolute;
+    box-shadow: 0 0 2px white, 0 0 5px white;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    width: 15%;
+    height: 100px;
+    transition: 2s;
+}
+button.fechar{
+    position: absolute;
+    background: #00E5FF;
+    color: #050816;
+    left:260px;
+    top:3%;
+}
+
+.alteracao{
+    opacity: 1;
 }
